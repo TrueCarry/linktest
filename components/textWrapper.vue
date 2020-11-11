@@ -8,31 +8,19 @@
       :key="i"
     >
       <span
-        v-if="token.type === 'text'"
-
-        v-text="token.value"
-      />
-
-      <a
-        v-else-if="token.type === 'url'"
-        :href="token.href"
-        target="_blank"
-        rel="noopener"
-        v-text="token.value"
+        v-if="false"
+        v-text="'123'"
       />
 
       <div v-else-if="token.type === 'mention'">
-        <nuxt-link
-          to="/aaa"
-        >
-          123
-        </nuxt-link>
+        <CustomElement />
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import CustomElement from './CustomElement.vue'
 
 export default {
   props: {
