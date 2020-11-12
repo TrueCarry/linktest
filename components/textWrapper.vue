@@ -23,6 +23,10 @@
 import CustomElement from './CustomElement.vue'
 
 export default {
+  components: {
+    CustomElement,
+  },
+
   props: {
     text: {
       type: String,
