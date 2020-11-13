@@ -1,8 +1,5 @@
 <template>
   <div class="text__wrapper">
-    <nuxt-link to="bbb">
-      TestLink
-    </nuxt-link>
     <div
       v-for="(token, i) in tokens"
       :key="i"
@@ -13,7 +10,7 @@
       />
 
       <div v-else-if="token.type === 'mention'">
-        <CustomElement />
+        BeforeCE <custom-element>f</custom-element> AfterCE
       </div>
     </div>
   </div>
